@@ -142,6 +142,9 @@ function App() {
         <div className="flex justify-end mb-8">
           <Label htmlFor="tag-filter" className="place-self-center" >Tag Filter:</Label>
           <DropdownList id="tag-filter" defaultValue={defaultTag} options={tagOptions} onSelect={(value) => {
+            // reset selected stock info for better UX.
+            setCurrentStockInfoState(null);
+            // set selected tag
             setSelectedTagState(value);
           }} />
         </div>

@@ -1,6 +1,8 @@
 # stocks-website
 Demo stocks website
 
+<video src="https://github.com/shadiabuhilal/stocks-website/raw/main/Stock-App.mp4" />
+
 ----------
 
 ## Tech used:
@@ -21,6 +23,22 @@ npm run start:server
 
 ### Backend API Endpoint:
 http://localhost:3001/stocks
+
+
+### Mocked DB file:
+
+Note: This file will remove entries when applying delete. to try again you can copy the content of the readonly file and paste it to this file.
+
+```
+mock-server/db.json
+```
+
+
+### Mocked readonly DB file:
+
+```
+mock-server/db-readonly.json
+```
 
 
 ### How to run the front end:
@@ -45,6 +63,8 @@ http://localhost:3000
     - Apply tag filtering.
     - Showing detail panel after clicking on the symbol link (I user a button instead of link for better UX).
     - In action column and 'X' icon is shown upon hover, and upon a single click, deletes that stock entry from the grid and persistence. 
+    - Handling errors/failures.
+    - DropdownList menu with scroll support for long content.
     - Semantics of JavaScript.
     - Documentation of code (for some of the app, in future UI components can be documented using storybook).
     - Apply accessibility (we can improve more).
@@ -53,6 +73,7 @@ http://localhost:3000
 ----------
 
 ## Future plans:
+- Add pagination to grid data.
 - User react routing for deeplink to support browser history in navigation, or slecting stock items and tag filters.
 - Add StoryBook https://storybook.js.org/ to this project, it provides auto documentation for UI components, ability to build component without depending on parent component/page and more.
 - Add unit tests using Jest https://jestjs.io/ and react-testing-library https://testing-library.com/docs/react-testing-library/intro/
