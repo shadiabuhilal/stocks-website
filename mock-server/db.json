@@ -1,0 +1,36 @@
+{
+  "stocks": [
+    {
+      "symbol": "AAPL",
+      "name": "APPLE",
+      "last_price": 133,
+      "market_cap": "2.2T",
+      "tag": "forFriends",
+      "id": "90bd"
+    },
+    {
+      "symbol": "CSCO",
+      "name": "Cisco Systems",
+      "last_price": 51,
+      "market_cap": "199B",
+      "tag": "watching",
+      "id": "2d6f"
+    },
+    {
+      "symbol": "T",
+      "name": "AT&T",
+      "last_price": 29,
+      "market_cap": "123B",
+      "tag": "watching",
+      "id": "cfb3"
+    },
+    {
+      "symbol": "VMW",
+      "name": "Vmware",
+      "last_price": 165,
+      "market_cap": "61B",
+      "tag": "favorite",
+      "id": "aaa6"
+    }
+  ]
+}

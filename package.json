@@ -1,0 +1,49 @@
+{
+  "name": "stocks-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/node": "^16.18.90",
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
+    "classnames": "^2.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
+    "react-toastify": "^10.0.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^4.9.5",
+    "use-outside-click-react-hook": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:server": "json-server ./mock-server/db.json --port=3001",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
