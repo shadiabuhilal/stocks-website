@@ -70,6 +70,7 @@ http://localhost:3000
     - Semantics of JavaScript.
     - Documentation of code (for some of the app, in future UI components can be documented using storybook).
     - Apply accessibility (we can improve more).
+    - No need to user redux or any state managment for this small demo project.
     
 
 ----------
