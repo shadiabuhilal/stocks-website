@@ -7,7 +7,7 @@ Demo stocks website
 
 ----------
 
-## Tech used:
+## Technology Used:
 - JavaScript framework/lib: React using TypeScript. https://create-react-app.dev/docs/adding-typescript/
 - Presentation layer: Tailwind CSS https://tailwindcss.com/
 - React Svg icon components: react-icons https://www.npmjs.com/package/react-icons
