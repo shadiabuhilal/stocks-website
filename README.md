@@ -1,7 +1,9 @@
 # stocks-website
 Demo stocks website
 
-<video src="https://github.com/shadiabuhilal/stocks-website/raw/main/Stock-App.mp4" />
+<video width="320" height="240" controls>
+  <source src="https://github.com/shadiabuhilal/stocks-website/raw/main/Stock-App.mp4" type="video/mp4">
+</video>
 
 ----------
 
