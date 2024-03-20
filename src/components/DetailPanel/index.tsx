@@ -12,8 +12,8 @@ export default function DetailPanel({ panelTitle, className, KeyValuePairList }:
         <h2 className="text-xl font-bold">{panelTitle}</h2>
         <dl>
             <div className="m-4 grid grid-cols-2 gap-4 max-w-96">
-                {KeyValuePairList.map(({ key, value }) => {
-                    return <div>
+                {KeyValuePairList.map(({ key, value }, index) => {
+                    return <div key={`${key}-${index}`}>
                         <Label>{key}:</Label><span>{value}</span>
                     </div>
                 })}
