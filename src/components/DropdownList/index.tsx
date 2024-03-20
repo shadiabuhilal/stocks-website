@@ -58,23 +58,23 @@ export default function DropdownList({ id, defaultValue, className, options, onS
                 setIsOpenState(!isOpenState);
             }}
             aria-haspopup="listbox" aria-expanded={isOpenState}
-            className="relative rounded border inline-flex p-1 overflow-hidden"
+            className="relative rounded border border-input-border-color inline-flex p-1 overflow-hidden bg-white"
         >
             <span className="inline-block min-w-48 text-left">
                 {selectedOptionState}
             </span>
-            <span className="absolute right-0 top-0 w-6 bg-grid-header-color border-l h-full">
-                <IoMdArrowDropdown className="inline-block" />
+            <span className="absolute right-0 top-0 w-6 bg-dropdown-action-color border-l border-input-border-color h-full flex justify-center items-center">
+                <IoMdArrowDropdown className="inline-block text-dropdown-icon-color" />
             </span>
         </button>
         {isOpenState && (
             <div ref={menuPopupDivRef} onKeyDown={handleKeyDown} role="listbox"
-                aria-labelledby={`${id}-selected-option`} className="absolute z-10 mt-1 w-48 bg-white border rounded max-h-64 overflow-y-scroll" tabIndex={0}>
+                aria-labelledby={`${id}-selected-option`} className="absolute z-10 mt-1 bg-white border border-input-border-color rounded w-full overflow-y-scroll" tabIndex={0}>
                 {options.map((option) => (
                     <div
                         key={option}
                         onClick={() => handleOptionSelect(option)}
-                        className="cursor-pointer hover:bg-gray-200 py-2 px-4 border-b last:border-0"
+                        className="cursor-pointer hover:bg-gray-200 py-2 px-4 border-b last:border-0 border-input-border-color"
                         role="option"
                         aria-selected={selectedOptionState === option}
                         tabIndex={0}
