@@ -43,7 +43,12 @@ mock-server/db-readonly.json
 ```
 
 
-### How to run the front end:
+### How to run the front end as Prod:
+```
+npm run start:prod
+```
+
+### How to run the front end as Dev:
 ```
 npm run start
 ```
@@ -75,6 +80,19 @@ http://localhost:3000
 
 ----------
 
+## Troubleshooting:
+
+### The stock list is fetched twice, when page loads when running FE as dev using `npm run start`?
+This is a common problem in react when it's using `<React.StrictMode>`, this component only runs in dev js bundle, it will be ignored on prod bundle.
+Running `npm run start:prod` will run the production bundle. Or removing `<React.StrictMode>` usage by checking a condition from env var, and turn it on and off based on the needs.
+
+For more info regarding `<React.StrictMode>`, please check:
+- https://stackoverflow.com/a/72238236/1319387
+- https://react.dev/blog/2022/03/08/react-18-upgrade-guide#updates-to-strict-mode
+
+
+----------
+
 ## Future plans:
 - Add pagination to grid data.
 - User react routing for deeplink to support browser history in navigation, or slecting stock items and tag filters.
@@ -82,3 +100,4 @@ http://localhost:3000
 - Add unit tests using Jest https://jestjs.io/ and react-testing-library https://testing-library.com/docs/react-testing-library/intro/
 - Adding function/e2e tests using cypress https://www.cypress.io/
 - Integrate Github CI/CD actions to build and test and publish StoryBook.
+

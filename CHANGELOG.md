@@ -1,3 +1,9 @@
+# 0.1.4 (2024-03-20)
+
+### Features
+- Adding `start:prod` and `prestart:prod` npm scripts to run the production bundle for Stocks FE App, by using `serve` npm pkg that serves static assets.
+- Adding `Troubleshooting` section in `README.md`.
+
 # 0.1.3 (2024-03-20)
 
 
