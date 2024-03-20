@@ -9,6 +9,7 @@ import { deleteStocksDataById, getStocksData } from './dao/dao-stocks';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from './components/Loading';
+import ShowOnHover from './components/ShowOnHover';
 
 type StockDataItem = {
   id: number;
@@ -191,11 +192,11 @@ function App() {
               <Grid.Cell isLoading={isLoading} className='min-h-20'>
                 {/* show loading when delete item is in progress */}
                 {isRowInDeletingMode && <Loading />}
-                {!isRowInDeletingMode && id && <>
-                  <ButtonDelete className="opacity-0 hover:opacity-100 focus:opacity-100" onClick={() => {
+                {!isRowInDeletingMode && id && <ShowOnHover>
+                  <ButtonDelete onClick={() => {
                     deleteStockById(id)
                   }} />
-                </>}
+                </ShowOnHover>}
               </Grid.Cell>
             </Grid.Row>
           })}
